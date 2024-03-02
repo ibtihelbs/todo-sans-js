@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon for the website -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Title of the website -->
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="center">
+      <!-- Header section with Todo title and theme switcher button -->
+      <header class="flex between">
+        <h1>Todo</h1>
+        <button class="theme-switcher">
+          <!-- Theme switcher button with a sun icon -->
+          <img src="./images/icon-sun.svg" alt="icon-sun" />
+        </button>
+      </header>
+      <main>
+        <!-- Form for adding a new task -->
+        <form class="flex">
+          <span></span>
+          <input type="text" id="add" placeholder="Create new todo ...." />
+        </form>
+        <!-- Task management section -->
+        <section id="tasks-management">
+          <div id="tasks-wrap">
+            <!-- Single task with buttons for completion and deletion -->
+            <div class="single-task flex between">
+              <div class="flex">
+                <input type="checkbox" class="state" />
+                <p>new task</p>
+              </div>
+              <button class="delete">
+                <img src="./images/icon-cross.svg" alt="icon-cross" />
+              </button>
+            </div>
+          </div>
+          <hr />
+          <!-- Filters section for filtering tasks -->
+          <div class="filters flex between">
+            <!-- Displaying the number of items left -->
+            <span>items left</span>
+            <!-- Filter buttons for All, Active, and Completed tasks -->
+            <div class="filter-btn">
+              <button class="all">All</button>
+              <button class="active">Active</button>
+              <button class="completed">Completed</button>
+            </div>
+            <!-- Button to clear completed tasks -->
+            <button class="clear-completed">Clear Completed</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- Footer attribution with link to Frontend Mentor -->
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">ibs</a>.
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
