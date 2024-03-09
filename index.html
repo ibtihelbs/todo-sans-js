@@ -27,7 +27,7 @@
       </header>
       <main>
         <!-- Form for adding a new task -->
-        <form class="flex">
+        <form id="todo-form" class="flex">
           <span></span>
           <input type="text" id="add" placeholder="Create new todo ...." />
         </form>
@@ -37,7 +37,9 @@
             <!-- Single task with buttons for completion and deletion -->
             <div class="single-task flex between">
               <div class="flex">
-                <input type="checkbox" class="state" />
+                <form class="checked">
+                  <input type="checkbox" class="state" />
+                </form>
                 <p>new task</p>
               </div>
               <button class="delete">
@@ -49,7 +51,10 @@
           <!-- Filters section for filtering tasks -->
           <div class="filters flex between">
             <!-- Displaying the number of items left -->
-            <span>items left</span>
+            <div>
+              <span id="active-number">0</span>
+              <span>items left</span>
+            </div>
             <!-- Filter buttons for All, Active, and Completed tasks -->
             <div class="filter-btn">
               <button class="all">All</button>
@@ -69,6 +74,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">ibs</a>.
     </footer>
-    <script src="./es6.js" type="module"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

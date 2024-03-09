@@ -117,3 +117,6 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
 }
+.lined {
+  text-decoration: line-through;
+}

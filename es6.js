@@ -10,7 +10,8 @@ const testFunction = (x) => console.log(x);
 
 testFunction("bye");
 //Array
-const render = arr.map(
+let render = "";
+render += arr.map(
   (v) => ` <div class="single-task flex between">
 <div class="flex">
   <input type="checkbox" class="state" />
@@ -21,7 +22,7 @@ const render = arr.map(
 </button>
 </div>`
 );
-
+body.innerHTML = render;
 console.log(render);
 const filterByfirst = (v) => {
   return v[0] == "m";
