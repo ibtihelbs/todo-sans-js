@@ -1,8 +1,5 @@
 let tasks = [];
 
-const addInput = document.querySelector("#add");
-const form = document.querySelector("#todo-form");
-const tasksWrap = document.querySelector("#tasks-wrap");
 const allBtn = document.querySelector(".all");
 const activeBtn = document.querySelector(".active");
 const completedBtn = document.querySelector(".completed");
